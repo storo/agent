@@ -1,0 +1,29 @@
+# Git
+.git
+.gitignore
+
+# Docker
+Dockerfile
+.dockerignore
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.eggs/
+*.egg-info/
+dist/
+build/
+
+# IDE / Editor specific
+.vscode/
+.idea/
+*.swp
+*.swo
