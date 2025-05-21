@@ -57,3 +57,22 @@ You can modify `agent.py` to:
 *   Define different prompt templates.
 *   Create more complex chains or agents.
 *   Integrate other Langchain components like memory, tools, etc.
+
+## Running with Docker
+
+To build and run this application using Docker, follow these steps:
+
+1.  **Build the Docker image:**
+    Navigate to the `langchain_ai_agent` directory in your terminal and run:
+    ```bash
+    docker build -t langchain-agent .
+    ```
+
+2.  **Run the Docker container:**
+    You need to pass your OpenAI API key as an environment variable to the container.
+    Replace `your_api_key_here` with your actual OpenAI API key.
+    ```bash
+    docker run -e OPENAI_API_KEY='your_api_key_here' langchain-agent
+    ```
+
+    The application will then run inside the Docker container, and you should see the output in your terminal.
